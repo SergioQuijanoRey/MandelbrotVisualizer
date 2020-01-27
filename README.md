@@ -1,4 +1,6 @@
-<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script># Visualizador del conjunto de Mandelbrot
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script>
+
+# Visualizador del conjunto de Mandelbrot
 
 ## Autor
 
