@@ -15,7 +15,7 @@ using namespace std;
 const int width = 1920;                     // Anchura de la imagen
 const int height = 1080;                    // Altura de la imagen
 const int max_iteraciones = 50;             // Cota de numero de iteraciones
-const int max_norma = 2;                    // Cota de la norma
+const int max_norma = 10;                   // Cota de la norma
 const string file_name = "points.csv";      // Archivo donde se almacenan los resultados
 
 // Definicion de estructuras
@@ -114,6 +114,5 @@ int main(){
 
     // Fin del programa
     output.close();
-    cout << "Todo va bien" << endl;
     return 0;
 }
