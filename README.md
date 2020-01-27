@@ -11,16 +11,15 @@
 
 Visualizamos el conjunto del Mandelbrot. Este es un conjunto de números complejos $c$ tales que la sucesión que se define a partir de ellos queda acotada:
 
-<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default">
-$z_0 = 0 \in \mathds{C}$
-$z_{n+1} = z_{n}^{2} + c$
-</script>
+$$z_0 = 0 \in C$$
+
+$$z_{n+1} = z_{n}^{2} + c$$
 
 No podemos saber si esta sucesión queda acotada, así que se procede numéricamente. Sabemos que la sucesión diverge si la norma de $z_n$ es mayor que dos. Luego podemos usar un valor de la norma mayor que 2 como criterio de divergencia (por ejemplo 10, para realzar la imagen)
 
 Si tras un número de iteraciones dado, la sucesión queda acotada, podemos suponer que nunca divergerá.
 
-El color de los puntos depende de la velocidad de divergencia (cuanto menor sea el $n$ para el cual $z_n$ tiene norma mayor que 2, más vivo será su color)
+El color de los puntos depende de la velocidad de divergencia (cuanto menor sea el $$n$$ para el cual $$z_n$$ tiene norma mayor que 2, más vivo será su color)
 
 ## Estructura
 
