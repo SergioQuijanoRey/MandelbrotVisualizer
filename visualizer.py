@@ -9,7 +9,7 @@ from PIL import Image, ImageColor
 
 # Parametros del programa
 #===============================================================================
-file_name = "mandelbrot.png"    # Nombre del archivo donde guardamos la imagen generada
+file_name = "mandelbrot_cpp.png"    # Nombre del archivo donde guardamos la imagen generada
 data_file = "points.csv"        # Nombre del archivo del que tomamos los datos
 width = -1                      # Anchura de la imagen
 height = -1                     # Altura de la imagen
