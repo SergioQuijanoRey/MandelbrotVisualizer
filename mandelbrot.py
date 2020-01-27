@@ -13,7 +13,8 @@ siguente sucesión queda acotada:
 
 Como no podemos saber si esta acotada, hacemos un numero de iteraciones. Si el 
 modulo de $z_n$ es menor que dos, suponemos que esta acotada. Si en algun momento
-dicho modulo es mayor que dos, sabemos que la sucesion no esta acotada
+dicho modulo es mayor que dos, sabemos que la sucesion no esta acotada. Se puede
+utilizar una cota mayor para que la imagen sea realzada
 
 """
 
@@ -26,12 +27,12 @@ import math
 witdh = 1920                        # Anchura de la imagen
 height = 1080                       # Altura de la imagen
 max_iteraciones = 50                # Cota para las iteraciones
-max_norma = 2                       # Cota para la norma
+max_norma = 10                      # Cota para la norma
 file_name = "mandelbrot.png"        # Archivo donde se guarda la imagen generada
 
 # Funciones auxiliares
 #===============================================================================
-def map_pixel_x(x, y):
+def map_pixel_to_complex(x, y):
     """Mapea un pixel al plano complejo. 
 
     Parameters:
@@ -113,8 +114,7 @@ if __name__ == "__main__":
     for x in range(image.size[0]):
         for y in range(image.size[1]):
             # Se mapea el pixel al plano complejo
-            new_x = map_pixel_x(x)
-            new_y = map_pixel_y(y)
+            new_x, new_y= map_pixel_to_complex(x, y)
 
             # Se calcula la intensidad del rojo
             red = get_red_mandelbrot(new_x, new_y)
