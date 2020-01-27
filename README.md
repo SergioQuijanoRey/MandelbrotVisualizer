@@ -1,4 +1,4 @@
-# Visualizador del conjunto de Mandelbrot
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script># Visualizador del conjunto de Mandelbrot
 
 ## Autor
 
@@ -42,4 +42,4 @@ El segundo, escrito en `C++` y `Python`. La parte de `C++`, `mandelbrot.cpp`, ca
 
 ## To-Do
 
-[ ] Hacer la visualización en C++ para evitar el script en Python que es muy lento
+* Hacer la visualización en C++ para evitar el script en Python que es muy lento
