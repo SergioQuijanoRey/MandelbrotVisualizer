@@ -19,7 +19,7 @@ No podemos saber si esta sucesión queda acotada, así que se procede numéricam
 
 Si tras un número de iteraciones dado, la sucesión queda acotada, podemos suponer que nunca divergerá.
 
-El color de los puntos depende de la velocidad de divergencia (cuanto menor sea el $$n$$ para el cual $$z_n$$ tiene norma mayor que 2, más vivo será su color)
+El color de los puntos depende de la velocidad de divergencia (cuanto menor sea el $n$ para el cual $z_n$ tiene norma mayor que 2, más vivo será su color)
 
 ## Estructura
 
@@ -29,8 +29,11 @@ El segundo, escrito en `C++` y `Python`. La parte de `C++`, `mandelbrot.cpp`, ca
 
 ## Ejecución
 
-* Hay dos programas, uno escrito enteramente en Python, y otro en C++ y Python
-    * El puramente escrito en Python se ejecuta con `python3.8 mandelbrot.py`
+* El puramente escrito en Python se ejecuta con `python3.8 mandelbrot.py`
+* Para el combinado:
+    * Compilar con `make mandelbrot`
+    * Ejecutar `./mandelbrot`: genera el archivo `points.csv`
+    * Visualizar con `python3.8 visualizer.py`
 
 ## Resultados
 
