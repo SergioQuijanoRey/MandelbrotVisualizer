@@ -2,7 +2,7 @@
  * @file mandelbrot.cpp
  * @author Sergio Quijano Rey
  * @brief Calcula el conjunto de Mandelbrot. Los datos los guarda en un archivo
- *        .csv para que sea visualizado por un script de python
+ *        .csv para que sea visualizado por un script de python @visualizer.py
  * */
 #include <iostream>
 #include <complex>

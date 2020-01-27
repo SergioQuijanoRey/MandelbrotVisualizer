@@ -1,11 +1,18 @@
+"""Visualiza un archivo de datos .csv generado por el programa c++ de calculo de Mandelbrot.
+Author:
+    - Sergio Quijano Rey
+Date:
+    - 27/01/2020
+"""
+
 from PIL import Image, ImageColor
 
 # Parametros del programa
 #===============================================================================
-file_name = "mandelbrot.png"
-data_file = "points.csv"
-width = -1
-height = -1
+file_name = "mandelbrot.png"    # Nombre del archivo donde guardamos la imagen generada
+data_file = "points.csv"        # Nombre del archivo del que tomamos los datos
+width = -1                      # Anchura de la imagen
+height = -1                     # Altura de la imagen
 
 # Funcion principal
 #===============================================================================
@@ -16,24 +23,25 @@ if __name__ == "__main__":
     with open(data_file, "r") as data_file:
         data = data_file.readlines()
 
+    # Procesamiento de los datos
     print("Procesando datos")
     data = [row.replace("\n", "") for row in data]
     data = [row.replace(" ", "") for row in data]
     data = [row.split(",") for row in data]
     data = [[int(col) for col in row] for row in data]
 
-    print("Creando imagen")
     # Creacion de imagen canvas
+    print("Creando imagen")
     width = data[0][0]
     height = data[0][1]
     data.pop(0)
 
-    # Tomar las dimensiones de la imagen
+    # Dimensiones de la imagen
     image = Image.new("RGB", (width, height), "black")
     pixels = image.load()
     
-    print("Coloreando imagen")
     # Coloreamos la imagen
+    print("Coloreando imagen")
     for row in data:
         x = row[0]
         y = row[1]
